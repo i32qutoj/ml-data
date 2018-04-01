@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from ninstances_py.ninstances import ninstances
-from lcard_py.lcard import lcard
+from statistics_py.statistics import statistics
 
 def main():
     loop_condition=True
@@ -10,7 +10,7 @@ def main():
         print("\nMenu:\n")
         print("0.- EXIT")
         print("1.- Number of instances, features and labels (Juan A. Romero)")
-        print("2.- Label cardinality (Joaquín Quero Torres - i32qutoj)")
+        print("2.- Statistics (Joaquín Quero Torres - i32qutoj)")
 
         main_input = int(input())
 
@@ -22,7 +22,7 @@ def main():
             ninstances(datafile)
         elif main_input == 2:
             datafile=input("Introduce nombre de datafile: ")
-            lcard(datafile)
+            statistics(datafile)
 
 
 
